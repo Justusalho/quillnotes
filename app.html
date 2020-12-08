@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QuillNotes</title>
+        <link rel="stylesheet" type="text/css" href="apptheme.css">
+    </head>
+    <body>
+        <div class="content" id="math-container">
+            <span class="math-editor"></span>
+        </div>
+
+        <script src="jquery/jquery.js"></script>
+        <script src="mathquill/build/mathquill.js"></script>
+        <script src="quillnotes.js"></script>
+
+        <script>
+            var MQ = MathQuill.getInterface(2); // keeps the API stable
+            
+            var mathField = [];
+            insertMath();
+            mathField[0].focus();
+        </script>
+
+        <div class="help">
+            <a href="latexsheet.pdf" target="_blank"><img width="50em" src="question.svg" alt="Help"></a>
+        </div>
+    </body>
+</html>
+
+<!-- Icons made by flaticon.com/authors/pixel-perfect -->
